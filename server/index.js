@@ -32,3 +32,5 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
 //"start": "nodemon --env-file=.env index.js" pakage line
+
+//added the comments
