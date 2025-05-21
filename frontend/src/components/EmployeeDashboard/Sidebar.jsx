@@ -64,6 +64,18 @@ const Sidebar = () => {
         </NavLink>
 
         <NavLink
+          to={`/employee-dashboard/attendace`}
+          className={({ isActive }) =>
+            `${
+              isActive ? "bg-blue-500" : ""
+            } flex items-center spase-x-4  py-2.5 px-4 rounded`
+          }
+        >
+          <FaCalendarAlt />
+          <span className="pl-2">Attendance</span>
+        </NavLink>
+
+        <NavLink
           to="/employee-dashboard/setting"
           className={({ isActive }) =>
             `${

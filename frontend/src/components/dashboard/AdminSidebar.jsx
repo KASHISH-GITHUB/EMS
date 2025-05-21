@@ -86,6 +86,13 @@ const AdminSidebar = () => {
           <FaFileAlt />
           <span className="pl-2">Report</span>
         </NavLink>
+        <NavLink
+          to="/admin-dashboard/resume-screening"
+          className="flex items-center spase-x-4 py-2.5 px-4 rounded"
+        >
+          <FaFileAlt />
+          <span className="pl-2">Resume Scoring</span>
+        </NavLink>
       </div>
     </div>
   ); //admin@gmail.com

@@ -10,6 +10,8 @@ import settingRouter from "./routes/setting.js";
 import dashboardRouter from "./routes/dashboard.js";
 import reportRouter from "./routes/report.js";
 import dotenv from "dotenv";
+import resumeRouter from "./routes/resume.js";
+import attendanceRoutes from "./routes/attendance.js";
 
 connect();
 const app = express();
@@ -26,11 +28,10 @@ app.use("/api/leave", leaveRouter);
 app.use("/api/setting", settingRouter);
 app.use("/api/dashboard", dashboardRouter);
 app.use("/api/report", reportRouter);
+app.use("/api/resume", resumeRouter);
+app.use("/api/attendance", attendanceRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
-//"start": "nodemon --env-file=.env index.js" pakage line
-
-//added the comments

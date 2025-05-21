@@ -18,7 +18,7 @@ const Add = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/leave/add`,
+        `http://localhost:5050/api/leave/add`,
         leave,
         {
           headers: {

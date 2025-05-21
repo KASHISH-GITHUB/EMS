@@ -21,6 +21,8 @@ import Setting from "./components/EmployeeDashboard/Setting";
 import Table from "./components/leave/Table";
 import Detail from "./components/leave/Detail";
 import Report from "./components/Report/ReportTable";
+import ResumeScreening from "./components/resume/ResumeScreening";
+import AttendanceUI from "./components/attendance/AttendanceUI";
 //
 // import dotenv from "dotenv";
 // dotenv.config();
@@ -72,6 +74,7 @@ function App() {
             path="/admin-dashboard/employee/salary/:id"
             element={<ViewSalary />}
           ></Route>
+          <Route path="/admin-dashboard/resume-screening" element={<ResumeScreening />} />
 
           {/* New Report Route */}
           <Route
@@ -122,6 +125,10 @@ function App() {
           <Route
             path="/employee-dashboard/setting"
             element={<Setting />}
+          ></Route>
+          <Route
+            path="/employee-dashboard/attendace"
+            element={<AttendanceUI />}
           ></Route>
         </Route>
       </Routes>
